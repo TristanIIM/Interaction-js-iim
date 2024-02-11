@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap");
+
+body .dark {
+  font-family: "Rethink Sans", sans-serif;
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-family: "Rethink Sans", sans-serif;
+  margin: 0;
+  color: black;
+}
+
+.background .dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(./img/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(./img/poudlardbretagne.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.logo-navbar {
+  /* height: auto; */
+  width: 10%;
+  min-width: 100px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar .disposition {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.nav-bar .disposition li {
+  margin: 0 30px;
+}
+
+.disposition {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disposition li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.disposition li a:hover {
+  color: rgb(221, 221, 221);
+  transition: background-color 0.3s ease;
+}
+
+.title-parameter {
+  display: block;
+  font-size: 3em;
+  padding: 10px 20px;
+  font: bold;
+  text-align: center;
+}
+
+.paragraphe-parameter {
+  display: block;
+  padding: 10px 15%;
+  text-align: center;
+  font-size: 1.75em;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 5%;
+}
+
+.container div {
+  padding: 30px 10px;
+}
+
+.description {
+  width: fit-content;
+  max-width: 600px;
+  margin-right: 50px;
+}
+
+.paragraphe-size {
+  font-size: 1.5em;
+  text-align: justify;
+  margin: 0;
+  max-width: 600px;
+}
+
+.lien-collection .darkmode {
+  color: white;
+}
+
+.lien-collection .lightmode {
+  color: black;
+}
+
+.slider {
+  height: auto;
+  width: 332px;
+}
+
+.image-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+.image-container img {
+  height: auto;
+  width: 238px;
+}
+
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+  margin: 30px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+button {
+  /* margin-left: 20px;
+  margin-bottom: 30px; */
+  padding: 10px 32px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: #fff;
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+
+.footer-parameter {
+  background-color: rgb(186, 186, 186);
+  padding: 50px;
+}
+
+.social-logo a i:hover {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.social-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.social-logo a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20%;
+}
+
+.social-logo a i {
+  font-size: 2em;
+  color: grey;
+}
+
+.footer-parameter {
+  width: 100%;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-nav li {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.footer-nav li a {
+  color: white;
+  margin: 20%;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: rgb(221, 221, 221);
+  transition: background-color 0.3s ease;
+}
+
+.copyright {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  padding-bottom: 50px;
+  margin: 0 10%;
+}
+
+.div-size {
+  margin: 0 25px;
+}
+
+.img {
+  margin-top: 80px;
+  height: auto;
+  width: 238px;
+}
+
+.img:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease;
+}
+
+.img:not(:hover) {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.about-parameter {
+  text-align: center;
+}
+
+.picture {
+  width: 400px;
+  border-radius: 40px;
+  transition: all 1s ease;
+}
+
+.picture:hover {
+  opacity: 0;
+  transform: rotate(1080deg);
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 5%;
+}
+
+.swiper-slide {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: beige;
+  padding-left: 100px;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: beige;
+  padding-left: 100px;
+}
+
+.slide-gr {
+  background-image: url("./img/bannière-gryffondor.jpg");
+  background-size: cover;
+}
+.slide-po {
+  background-image: url("./img/bannière-poufsouffle.jpeg");
+  background-size: cover;
+}
+.slide-se {
+  background-image: url("./img/bannière-serdaigle.jpeg");
+  background-size: cover;
+}
+.slide-sr {
+  background-image: url("./img/bannière-serpentard.jpeg");
+  background-size: cover;
+}
+
+.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+@media (max-width: 600px) {
+  .paragraphe-parameter {
+    padding: 10px 10%;
+  }
+
+  .slider {
+    width: 250px;
+    height: auto;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: auto;
+  }
+
+  .nav-bar .disposition li {
+    margin: 0;
+  }
+
+  .logo-navbar {
+    display: none;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .about-description {
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.25em !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-description {
+    display: block;
+    text-align: center;
+  }
+
+  .picture {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .picture-parameter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 23%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    display: block;
+  }
+
+  .img {
+    width: 40%;
+    margin: 0 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: block;
+    margin: 0;
+  }
+
+  .paragraphe-size {
+    width: 100%;
+  }
+
+  .slider {
+    margin: auto;
+  }
+
+  .image-container {
+    overflow-y: hidden;
+  }
+
+  .image-container img {
+    padding: 50px;
+    scale: 145%;
+  }
+
+  .description {
+    margin: auto;
+    max-width: 900px;
+  }
+}

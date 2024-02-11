@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="tabs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hog'cards The Game</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <header>
+      <nav class="nav-bar">
+        <div>
+          <a href="index.html">
+            <img class="logo-navbar" src="./img/logo hp blanc.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="disposition">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tabs.html">TABS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Toutes les familles</li>
+          <li data-filter="cd">Gryffondor</li>
+          <li data-filter="jv">Serdaigle</li>
+          <li data-filter="3d">Poufsouffle</li>
+          <li data-filter="dw">Serpentard</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Luna</p>
+            <div class="card-axe">Serdaigle</div>
+          </div>
+
+          <a href="./img/Luna.png">
+            <img src="./img/Luna.png" alt="Luna" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">Cedric</p>
+            <div class="card-axe">Poufsouffle</div>
+          </div>
+
+          <a href="./img/Cedric.png">
+            <img src="./img/Cedric.png" alt="Cedric" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">Harry</p>
+            <div class="card-axe">Gryffondor</div>
+          </div>
+
+          <a href="./img/Harry.png">
+            <img src="./img/Harry.png" alt="Harry" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="dw">
+            <div class="card-header">
+              <p class="card-title">Malfoy</p>
+              <div class="card-axe">Serpentard</div>
+            </div>
+  
+            <a href="./img/Malfoy.png">
+              <img src="./img/Malfoy.png" alt="Malfoy" />
+            </a>
+          </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-parameter">
+        <p class="dark-change">Mode Sombre</p>
+        <div class="social-logo">
+          <a
+            href="https://www.facebook.com/profile.php?id=100010236078889"
+            target="_blank"
+            ><i
+              class="fa-brands fa-facebook"
+              style="color: rgb(62, 62, 202)"
+            ></i
+          ></a>
+          <a href="https://twitter.com/Tristan_Qnt" target="_blank"
+            ><i class="fa-brands fa-x-twitter" style="color: black"></i
+          ></a>
+          <a href="https://youtu.be/1P5yyeeYF9o?t=7" target="_blank"
+            ><i class="fa-brands fa-youtube" style="color: red"></i
+          ></a>
+          <a href="https://www.instagram.com/tristan_qnt/" target="_blank"
+            ><i class="fa-brands fa-instagram" style="color: orange"></i
+          ></a>
+        </div>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy;2023, Designed by Tristan Quesnot</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+    <script src="tabs.js"></script>
+  </body>
+</html>

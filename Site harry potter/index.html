@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hog'cards The Game</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <header>
+      <nav class="nav-bar">
+        <div>
+          <a href="index.html">
+            <img class="logo-navbar" src="./img/logo hp blanc.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="disposition">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tabs.html">TABS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1 class="title-parameter">Bienvenue sorcier</h1>
+          <article>
+            <p class="paragraphe-parameter">
+              Bienvenue sur Hog'cards : The Game, le site pour collectionner tes
+              Hog'cards ! Ouvre, échange et partage tes meilleures cartes avec
+              tes amis et montre au monde entier qui est le plus grand des
+              sorciers !
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title-parameter">Principe des cartes</h1>
+        <div class="container">
+          <div class="description">
+            <article>
+              <p class="paragraphe-size">
+                Accumule des cartes au fur et à mesure pour augmenter ta
+                collection et devenir le meilleur sorcier. Les cartes ont
+                différentes valeurs allant de 1 à 5. Échange, améliore et crée
+                ton équipe parfaite ! Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+                <a href="collection.html" class="lien-collection">
+                  <h1>Clique ici pour aller voir ta collection</h1>
+                </a>
+              </p>
+            </article>
+          </div>
+          <div class="slider">
+            <div class="image-container">
+              <img src="./img/Harry.png" alt="Harry Potter" />
+              <img src="./img/Malfoy.png" alt="Draco Malfoy" />
+              <img src="./img/Luna.png" alt="Luna Lovegood" />
+              <img src="./img/Cedric.png" alt="Cedric Diggory" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title-parameter">Formulaire d'inscription</h1>
+        <div class="message-error">
+          <ul></ul>
+        </div>
+
+        <div class="message-success">Formulaire envoyé avec succès</div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" />
+          </div>
+
+          <div>
+            <label for="passwordConfirm">Confirmation du mot de passe</label>
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+            />
+          </div>
+
+          <div>
+            <label for="famille">Famille</label>
+            <input
+              type="radio"
+              id="gryffondor"
+              name="famille"
+              value="gryffondor"
+            />
+            <label for="gryffondor">Gryffondor</label>
+            <input
+              type="radio"
+              id="poufsouffle"
+              name="famille"
+              value="poufsouffle"
+            />
+            <label for="poufsouffle">Poufsouffle</label>
+            <input
+              type="radio"
+              id="serdaigle"
+              name="famille"
+              value="serdaigle"
+            />
+            <label for="serdaigle">Serdaigle</label>
+            <input
+              type="radio"
+              id="serpentard"
+              name="famille"
+              value="serpentard"
+            />
+            <label for="serpentard">Serpentard</label>
+          </div>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+
+        <h1 class="title-parameter">Histoire des familles</h1>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')">
+            Gryffondor
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">
+            Poufsouffle
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+            Serdaigle
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Madrid')">
+            Serpentard
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Moldu')">
+            Moldu
+          </button>
+        </div>
+
+        <div id="London" class="tabcontent">
+          <h3>Gryffondor</h3>
+          <p>
+            À Poudlard, Aria Stone, une sorcière courageuse, a été sélectionnée
+            dans la maison Gryffondor. Sa scolarité a été marquée par des
+            aventures palpitantes et des amitiés solides avec d'autres élèves
+            audacieux. En tant que batteuse de l'équipe de Quidditch de
+            Gryffondor, elle a brillé sur le terrain, tandis qu'une quête
+            mystérieuse l'a amenée à affronter des forces obscures pour
+            récupérer un artefact magique dérobé. Sa détermination et son
+            leadership exceptionnel ont été récompensés lorsqu'elle a été nommée
+            préfète de Gryffondor, inscrivant ainsi son nom dans l'histoire de
+            Poudlard comme un exemple vivant des valeurs de la maison.
+          </p>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Poufsouffle</h3>
+          <p>
+            À Poudlard, la jeune sorcière Oliver Finch, dotée d'une nature
+            bienveillante et d'une éthique de travail exemplaire, a été répartie
+            à Poufsouffle. Tout au long de son parcours scolaire, Oliver a suivi
+            le chemin de la loyauté, de la patience et de la gentillesse, des
+            valeurs emblématiques de sa maison. Sa préférence pour l'équité et
+            l'entraide l'a conduite à s'impliquer activement dans le club de
+            jardinage de Poufsouffle, où elle a contribué à transformer les
+            espaces verts de Poudlard. En tant que gardienne des buts de
+            l'équipe de Quidditch de Poufsouffle, Oliver a également démontré
+            son engagement envers le fair-play et la solidarité. À la fin de ses
+            études, elle a été honorée en tant que préfète de Poufsouffle,
+            incarnant parfaitement les valeurs de sa maison et laissant derrière
+            elle un héritage d'altruisme et de persévérance.
+          </p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Serdaigle</h3>
+          <p>
+            À Poudlard, le jeune sorcier Ethan Ravenscroft a été sélectionné
+            dans la maison Serdaigle en raison de son insatiable soif de
+            connaissance et de sa perspicacité innée. Tout au long de son
+            parcours académique, Ethan s'est démarqué par son esprit vif et sa
+            passion pour l'apprentissage. En tant que membre assidu de la
+            bibliothèque, il a exploré les trésors de la sagesse ancienne et a
+            partagé ses découvertes avec ses camarades Serdaigle. Ethan s'est
+            également distingué en tant que joueur stratégique dans l'équipe de
+            Quidditch de Serdaigle, alliant intelligence et agilité sur le
+            terrain. Sa curiosité insatiable et son engagement envers la
+            recherche du savoir ont été reconnus lorsqu'il a été nommé préfet de
+            Serdaigle à la fin de ses études, symbolisant l'esprit érudit et la
+            quête de la vérité qui caractérisent la maison Serdaigle.
+          </p>
+        </div>
+
+        <div id="Madrid" class="tabcontent">
+          <h3>Serpentard</h3>
+          <p>
+            À Poudlard, le sorcier audacieux Adrian Malefoy s'est frayé un
+            chemin jusqu'à la maison Serpentard en raison de son ambition
+            indomptable et de son intelligence rusée. Tout au long de son séjour
+            à l'école de sorcellerie, Adrian a démontré sa détermination et son
+            talent stratégique, se distinguant particulièrement dans l'art des
+            duels magiques. En tant que poursuiveur chevronné de l'équipe de
+            Quidditch de Serpentard, il a prouvé sa compétence sur le terrain
+            tout en inspirant ses coéquipiers par son leadership. Ses
+            aspirations ambitieuses l'ont également conduit à exceller dans les
+            matières exigeantes, établissant ainsi sa réputation d'étudiant
+            acharné. À la fin de ses études, Adrian a été nommé préfet de
+            Serpentard, symbolisant la fierté, l'ambition et la loyauté qui
+            caractérisent la maison des serpents.
+          </p>
+        </div>
+
+        <div id="Moldu" class="tabcontent">
+          <h3>Moldu</h3>
+          <p>
+            Au sein de l'école de sorcellerie de Poudlard, le jeune moldu Liam
+            Turner a trouvé sa place particulière en dépit de son absence de
+            pouvoirs magiques. Malgré les défis uniques qu'il a rencontrés, Liam
+            s'est révélé être un étudiant déterminé et persévérant. Son charme
+            naturel et son esprit curieux ont rapidement fait de lui un camarade
+            apprécié au sein de la communauté magique. Bien qu'il n'ait pas
+            participé aux cours de magie, Liam a trouvé d'autres moyens de
+            contribuer, devenant par exemple membre actif du club de lecture
+            moldu à Poudlard. Sa volonté de comprendre et de s'intégrer dans le
+            monde sorcier a été saluée par ses pairs, illustrant que la magie
+            réside également dans la diversité et l'ouverture d'esprit.
+          </p>
+        </div>
+
+        <!-- Script en javascript -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+          integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+        <script src="main.js"></script>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-parameter">
+        <p class="dark-change">Mode Sombre</p>
+        <div class="social-logo">
+          <a
+            href="https://www.facebook.com/profile.php?id=100010236078889"
+            target="_blank"
+            ><i
+              class="fa-brands fa-facebook"
+              style="color: rgb(62, 62, 202)"
+            ></i
+          ></a>
+          <a href="https://twitter.com/Tristan_Qnt" target="_blank"
+            ><i class="fa-brands fa-x-twitter" style="color: black"></i
+          ></a>
+          <a href="https://youtu.be/1P5yyeeYF9o?t=7" target="_blank"
+            ><i class="fa-brands fa-youtube" style="color: red"></i
+          ></a>
+          <a href="https://www.instagram.com/tristan_qnt/" target="_blank"
+            ><i class="fa-brands fa-instagram" style="color: orange"></i
+          ></a>
+        </div>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy;2023, Designed by Tristan Quesnot</p>
+      </div>
+    </footer>
+  </body>
+</html>
